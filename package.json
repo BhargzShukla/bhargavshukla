@@ -1,0 +1,18 @@
+{
+  "name": "bhargavshukla.com",
+  "version": "0.1.0",
+  "description": "Personal portfolio and blog of AWS Certified Fullstack Engineer Bhargav Shukla. He specializes in JavaScript, Python and Docker. He writes about his experiences with JS, Python, AWS, and some other things.",
+  "private": true,
+  "scripts": {
+    "test": "echo 'Write some tests this time!'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BhargzShukla/bhargavshukla.git"
+  },
+  "author": "Bhargav Shukla <contact@bhargavshukla.com>",
+  "bugs": {
+    "url": "https://github.com/BhargzShukla/bhargavshukla/issues"
+  },
+  "homepage": "https://bhargavshukla.com"
+}
