@@ -1,0 +1,15 @@
+footer {
+    min-height: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul li {
+    margin: 0 0.5rem;
+}

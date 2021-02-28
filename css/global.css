@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+	max-width: 80ch;
+	margin: 0 auto;
+    background-color: var(--color-bg);
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--color-text);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}

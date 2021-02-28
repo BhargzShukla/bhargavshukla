@@ -5,8 +5,11 @@
   "private": true,
   "scripts": {
     "test": "echo 'Write some tests this time!'",
-    "serve": "eleventy --serve",
-    "build": "eleventy"
+    "serve": "eleventy --serve --watch",
+    "build": "eleventy",
+    "clean": "rm -rf ./_site/",
+    "preserve": "npm run clean",
+    "prebuild": "npm run clean"
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,8 @@
   },
   "homepage": "https://bhargavshukla.com",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1"
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "clean-css": "^4.2.3"
   }
 }

@@ -1,0 +1,34 @@
+.header {
+  min-height: 4rem;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.header nav > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 120%;
+    font-weight: 300;
+}
+
+.header nav > a > span {
+    font-weight: 700;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav ul li {
+    margin: 0 0.5rem;
+}
+
+.site-active-page {
+    text-decoration: underline;
+}

@@ -1,16 +1,114 @@
 ---
 layout: "base.njk"
+eleventyNavigation:
+    key: Home
+    order: 1
 ---
 
 <h1>
-    Hello world! I'm Bhargav Shukla. <span>👋</span>
+    Hello world! I'm Bhargav Shukla <span>&#128075;</span>
 </h1>
 <main>
     <p>I'm an AWS Certified Fullstack Engineer specialising in Python, JavaScript, and Docker.</p>
     <p>Currently, I'm a Senior Software Engineer at Fulfillment IQ.</p>
     <p>Reach out for mentorship opportunities.</p>
 
+    <h2>My Skills</h2>
+    <p>Here are the tools, technologies, and frameworks that I'm most experienced with:</p>
+
+    <table>
+        <caption class="sr-only">Bhargav's skill set</caption>
+        <tbody>
+            <tr>
+                <td>Languages</td>
+                <td>C#, Python, JavaScript, HTML5, CSS3</td>
+            </tr>
+            <tr>
+                <td>Frameworks</td>
+                <td>.NET, Django, Vue.js, React.js</td>
+            </tr>
+            <tr>
+                <td>Databases</td>
+                <td>SQL Server, PostgreSQL, MySQL, SQLite</td>
+            </tr>
+            <tr>
+                <td>AWS</td>
+                <td>Lambda, RDS, S3, API Gateway, EC2, Code*</td>
+            </tr>
+            <tr>
+                <td>Tools</td>
+                <td>Docker, Git, Sentry, Jira, Jenkins</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption class="sr-only">Bhargav's skill set</caption>
+        <thead>
+            <tr>
+                <th>Languages</th>
+                <th>Frameworks</th>
+                <th>Databases</th>
+                <th>AWS</th>
+                <th>Tools</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>C#</td>
+                <td>.NET</td>
+                <td>SQL Server</td>
+                <td>Lambda</td>
+                <td>Docker</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Django</td>
+                <td>PostgreSQL</td>
+                <td>RDS</td>
+                <td>Git</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Vue.js</td>
+                <td>MySQL</td>
+                <td>S3</td>
+                <td>Sentry</td>
+            </tr>
+            <tr>
+                <td>HTML5</td>
+                <td>React.js</td>
+                <td>SQLite</td>
+                <td>API Gateway</td>
+                <td>Jira</td>
+            </tr>
+            <tr>
+                <td>CSS3</td>
+                <td></td>
+                <td></td>
+                <td>EC2</td>
+                <td>Jenkins</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Code*</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Latest Blog Posts</h2>
+    <ul>
+        {%- for post in collections.latestPosts | reverse -%}
+        <li{% if page.url == post.url %} aria-current="page"{% endif %}>
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </li>
+        {%- endfor -%}
+    </ul>
+
     <h2>Get In Touch</h2>
+    <p>Reach out to me if you're looking for a mentor or you need help in your projects (it's also cool if you just wanna chat &#128521;).</p>
     <ol>
         <li>
             <a href="https://twitter.com/bhargzshukla" target="_blank" rel="noopener noreferrer">Twitter</a>

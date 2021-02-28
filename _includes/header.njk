@@ -1,16 +1,16 @@
-<header>
-    <ol>
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="/blog">Blog</a>
-        </li>
-        <li>
-            <a href="/projects">Projects</a>
-        </li>
-        <li>
-            <a href="/snippets">Snippets</a>
-        </li>
-    </ol>
+<header class="header">
+    <nav>
+        <a href="/">BHARGAV<span>SHUKLA</span></a>
+        {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+            listElement: "ul",
+            listItemElement: "li",
+            listClass: "site-nav-list",
+            listItemClass: "site-nav-list-item",
+            activeListItemClass: "site-active-page",
+            anchorClass: "",
+            activeAnchorClass: "",
+            activeKey: eleventyNavigation.key,
+            showExcerpt: false
+        }) | safe }}
+    </nav>
 </header>

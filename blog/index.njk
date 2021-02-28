@@ -1,9 +1,18 @@
 ---
 title: "My Blog Posts"
 layout: "base.njk"
+eleventyNavigation:
+    key: Blog
+    order: 2
 ---
 
-<h1>My Blog Posts</h1>
 <main>
-    {{ content | safe }}
+    <h1>My Blog Posts</h1>
+    <ul>
+        {%- for post in collections.post | reverse -%}
+        <li{% if page.url == post.url %} aria-current="page"{% endif %}>
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </li>
+        {%- endfor -%}
+    </ul>
 </main>
